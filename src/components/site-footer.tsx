@@ -1,68 +1,8 @@
-import { Icons } from "@/components/icons"
-import { siteConfig } from "@/config/site"
-import { DiscordLogoIcon } from "@radix-ui/react-icons"
-import Link from "next-intl/link"
-import Image from "next/image"
-
-const footerNavs = [
-  {
-    label: "Product",
-    items: [
-      {
-        href: "/pricing",
-        name: "Pricing",
-      },
-    ],
-  },
-  {
-    label: "Developers",
-    items: [
-      {
-        href: "#",
-        name: "Docs",
-      },
-      {
-        href: `${siteConfig.links.github}/issues`,
-        name: "Feedback and Requests",
-      },
-      {
-        href: `${siteConfig.links.github}/commits/main`,
-        name: "Changelog",
-      },
-    ],
-  },
-  {
-    label: "Community",
-    items: [
-      {
-        href: siteConfig.links.discord,
-        name: "Discord",
-      },
-      {
-        href: siteConfig.links.twitter,
-        name: "Twitter",
-      },
-      {
-        href: `mailto:${siteConfig.email}`,
-        name: "Email",
-      },
-    ],
-  },
-  {
-    label: "Legal",
-    items: [
-      {
-        href: "/terms",
-        name: "Terms",
-      },
-
-      {
-        href: "/privacy",
-        name: "Privacy",
-      },
-    ],
-  },
-]
+import { Icons } from "@/components/icons";
+import { siteConfig } from "@/config/site";
+import { DiscordLogoIcon } from "@radix-ui/react-icons";
+import Link from "next-intl/link";
+import { useTranslations } from "next-intl";
 
 const footerSocials = [
   {
@@ -80,10 +20,70 @@ const footerSocials = [
     name: "GitHub",
     icon: <Icons.gitHub className="h-4 w-4" />,
   },
-]
+];
 
 export function SiteFooter() {
-  const currentYear = new Date().getFullYear()
+  const t = useTranslations("footerNavLabels");
+  const footerNavs = [
+    {
+      label: t("labelName-1"),
+      items: [
+        {
+          href: "/pricing",
+          name: t("labelName-1-ItemName-1"),
+        },
+      ],
+    },
+    {
+      label: t("labelName-2"),
+      items: [
+        {
+          href: "#",
+          name: t("labelName-2-ItemName-1"),
+        },
+        {
+          href: `${siteConfig.links.github}/issues`,
+          name: t("labelName-2-ItemName-2"),
+        },
+        {
+          href: `${siteConfig.links.github}/commits/main`,
+          name: t("labelName-2-ItemName-3"),
+        },
+      ],
+    },
+    {
+      label: t("labelName-3"),
+      items: [
+        {
+          href: siteConfig.links.discord,
+          name: "Discord",
+        },
+        {
+          href: siteConfig.links.twitter,
+          name: "Twitter",
+        },
+        {
+          href: `mailto:${siteConfig.email}`,
+          name: "Email",
+        },
+      ],
+    },
+    {
+      label: t("labelName-4"),
+      items: [
+        {
+          href: "/terms",
+          name: t("labelName-4-ItemName-1"),
+        },
+
+        {
+          href: "/privacy",
+          name: t("labelName-4-ItemName-2"),
+        },
+      ],
+    },
+  ];
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="border-t">
@@ -91,14 +91,12 @@ export function SiteFooter() {
         <div className="md:flex md:justify-between p-4 py-16 sm:pb-24 gap-4">
           <div className="mb-12 flex-col flex gap-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="relative h-8 w-8">
-                <Image fill alt="Logo" src="/logo.png" />
-              </div>
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                {siteConfig.name}
+              <div className="relative h-8 w-8"></div>
+              <span className="move-left text-2xl font-semibold whitespace-nowrap dark:text-white">
+                {t("applicationName")}
               </span>
             </Link>
-            <p className="max-w-xs">{siteConfig.description}</p>
+            <p className="max-w-xs">{t("applicationDescription")}</p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-4">
             {footerNavs.map((nav) => (
@@ -141,12 +139,12 @@ export function SiteFooter() {
             © {currentYear}
             {" - "}
             <Link href="/" className="cursor-pointer">
-              {siteConfig.name}
+              {t("applicationName")}
             </Link>
             . All Rights Reserved.
           </span>
         </div>
       </div>
     </footer>
-  )
+  );
 }

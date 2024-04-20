@@ -1,19 +1,19 @@
-import { FR, US } from "country-flag-icons/react/3x2"
+import { US, ES } from "country-flag-icons/react/3x2";
 
 export function renderFlag(locale: string) {
-  let Flag
-  let country
+  let Flag;
+  let country;
   switch (locale) {
     case "en":
-      Flag = US
-      country = "English"
+      Flag = US;
+      country = "English";
       // country = COUNTRIES.US
-      break
-    case "fr":
-      Flag = FR
-      country = "French"
+      break;
+    case "es":
+      Flag = ES;
+      country = "Spanish";
       // country = COUNTRIES.FR
-      break
+      break;
     // case "es":
     //   Flag = ES
     //   country = "Spanish"
@@ -35,8 +35,8 @@ export function renderFlag(locale: string) {
     //   // country = COUNTRIES.PT
     //   break
     default:
-      Flag = US
-      country = "English"
+      Flag = US;
+      country = "English";
     // country = COUNTRIES.US
   }
 
@@ -45,7 +45,7 @@ export function renderFlag(locale: string) {
       <Flag className="h-4 w-4" title={country} />
       <span className="ml-2">{country}</span>
     </div>
-  )
+  );
 }
 
 // REfactored version but with an any type

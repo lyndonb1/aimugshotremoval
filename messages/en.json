@@ -2,35 +2,64 @@
   "landingNavbar": {
     "dashboard": "Dashboard",
     "getStarted": "Get Started",
-    "applicationName": "ShipInDays.cc"
+    "applicationName": "aimugshotremoval.com"
   },
   "metadata": {
-    "applicationName": "ShipInDays.cc",
-    "applicationDescription": "Ship your startup in days, not weeks in 27 languages with PayPal or Stripe, Authentication through Clerk or NextAuth, Customer Support, forms, waitlists, Mailgun, and more",
-    "keywords-0": "saas boilerplate",
-    "keywords-1": "saas internationlization",
-    "keywords-2": "nextjs internationlization",
-    "keywords-3": "react internationlization",
-    "keywords-4": "user authentication SaaSx",
-    "keywords-5": "SaaS customer support tools",
-    "keywords-6": "forms management for SaaS",
-    "keywords-7": "customer waitlists management",
-    "keywords-8": "email marketing for startups",
-    "keywords-9": "startup scaling solutions",
-    "keywords-10": "software as a service"
+    "applicationName": "AiMugshotRemoval.com",
+    "applicationDescription": "Remove mugshots, criminal arrest records, and booking information from online searches swiftly and efficiently with our advanced AI-driven technology.",
+    "keywords-0": "mugshot removal",
+    "keywords-1": "criminal record removal",
+    "keywords-2": "online privacy protection",
+    "keywords-3": "digital identity restoration",
+    "keywords-4": "arrest record removal",
+    "keywords-5": "privacy services",
+    "keywords-6": "online content suppression",
+    "keywords-7": "criminal charge removal",
+    "keywords-8": "AI-powered removal services",
+    "keywords-9": "remove booking photos",
+    "keywords-10": "erase online mugshots"
   },
   "hero": {
-    "heading": "Ship your startup in 27 languages, Ship in days not weeks",
-    "feature-1": "PayPal or Stripe payments built in",
-    "feature-2": "Authentication with NextAuth or Clerk",
-    "feature-3": "Email, Forms, Waitlists, Blogs",
-    "feature-4": "Customer Support, SEO, and more",
-    "heroUpperButtonText": "The only NextJS internationalized boilerplate built to easily ship to all countries & languages fast",
-    "heroButtonText": "Get ShipInDays Now",
-    "heroLowerButtonText": "3X your startup profits by shipping internationally"
+    "heading": "Clear Your Mugshot with AI",
+    "feature-1": "Quick mugshot removal",
+    "feature-2": "AI-driven content suppression technology",
+    "feature-3": "Clean your mugshot from Google, Bing, and Yahoo!",
+    "feature-4": "Privacy and digital identity restoration",
+    "heroUpperButtonText": "Start Cleaning Your Online Presence Today",
+    "heroButtonText": "Get Started Now",
+    "heroLowerButtonText": "Protect Your Privacy With Us"
   },
   "testimonialHighlight": {
-    "question": "What people are saying?",
-    "quote": " is awesome to build AI micro saas and leverage Next 14"
+    "question": "What are people saying?",
+    "quote": "aimugshotremoval.com is crucial for quickly erasing unwanted online records and restoring privacy."
+  },
+  "testimonials": {
+    "lovedBy": "Loved by",
+    "numberOfUsers": "500+ users",
+    "usersSay": "Here's what our users have to say"
+  },
+  "testimonialNames": {
+    "title-1": "Cook",
+    "description-1": "You helped me get my mugshot removed from the internet. I am so grateful for your service.",
+    "title-2": "Driver",
+    "description-2": "My mugshot was costing me job opportunities. Thanks to you, I can now move on with my life.",
+    "title-3": "Mechanic",
+    "description-3": "I was so embarrassed by my mugshot. Thanks to you, I can now hold my head up high.",
+    "title-4": "Carpenter",
+    "description-4": "Thanks for your help in removing my mugshot from the internet. I can now breathe easy."
+  },
+  "footerNavLabels": {
+    "applicationName": "AiMugshotRemoval.com",
+    "applicationDescription": "Remove mugshots, criminal arrest records, and booking information from online searches swiftly and efficiently with our advanced AI-driven technology.",
+    "labelName-1": "Product",
+    "labelName-1-ItemName-1": "Pricing",
+    "labelName-2": "Developers",
+    "labelName-2-ItemName-1": "Docs",
+    "labelName-2-ItemName-2": "Feedback and Requests",
+    "labelName-2-ItemName-3": "Changelog",
+    "labelName-3": "Community",
+    "labelName-4": "Legal",
+    "labelName-4-ItemName-1": "Terms",
+    "labelName-4-ItemName-2": "Privacy"
   }
 }

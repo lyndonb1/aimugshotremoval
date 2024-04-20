@@ -1,0 +1,36 @@
+{
+  "landingNavbar": {
+    "dashboard": "Panel de Control",
+    "getStarted": "Comenzar",
+    "applicationName": "aimugshotremoval.com"
+  },
+  "metadata": {
+    "applicationName": "aimugshotremoval.com",
+    "applicationDescription": "Elimina fichas policiales, registros de arrestos y detalles de reservas de las búsquedas en línea de manera rápida y eficiente con nuestra tecnología avanzada impulsada por IA.",
+    "keywords-0": "eliminación de fichas policiales",
+    "keywords-1": "eliminación de antecedentes penales",
+    "keywords-2": "protección de privacidad en línea",
+    "keywords-3": "restauración de identidad digital",
+    "keywords-4": "eliminación de registros de arresto",
+    "keywords-5": "servicios de privacidad",
+    "keywords-6": "supresión de contenido en línea",
+    "keywords-7": "eliminación de cargos criminales",
+    "keywords-8": "servicios de eliminación impulsados por IA",
+    "keywords-9": "eliminar fotos de reservas",
+    "keywords-10": "borrar fichas policiales en línea"
+  },
+  "hero": {
+    "heading": "Limpia tu Huella Digital, Rápida y Eficazmente",
+    "feature-1": "Eliminación rápida de fichas policiales y registros de arrestos",
+    "feature-2": "Tecnología de supresión de contenido impulsada por IA",
+    "feature-3": "Apoyo para diversos agregadores de datos y sitios web de búsqueda de personas",
+    "feature-4": "Privacidad y restauración de identidad digital",
+    "heroUpperButtonText": "Comienza a Limpiar tu Presencia en Línea Hoy",
+    "heroButtonText": "Comienza Ahora",
+    "heroLowerButtonText": "Protege tu Privacidad con Nosotros"
+  },
+  "testimonialHighlight": {
+    "question": "¿Qué dicen las personas?",
+    "quote": "aimugshotremoval.com es crucial para borrar rápidamente registros no deseados en línea y restaurar la privacidad."
+  }
+}
