@@ -18,6 +18,7 @@ export const env = createEnv({
   client: {
     NEXT_PUBLIC_APP_URL: z.string().url().min(1),
     NEXT_PUBLIC_CRISP_WEBSITE_ID: z.string().optional(),
+    NEXT_PUBLIC_STRIPE_PAYMENT_PAGE_URL: z.string().optional(),
   },
   // Environment variables available on both the server and the client.
   // 💡 You'll get type errors if these are not prefixed with NEXT_PUBLIC_.
@@ -33,5 +34,7 @@ export const env = createEnv({
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:
       process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
     NEXT_PUBLIC_CRISP_WEBSITE_ID: process.env.NEXT_PUBLIC_CRISP_WEBSITE_ID,
+    NEXT_PUBLIC_STRIPE_PAYMENT_PAGE_URL:
+      process.env.NEXT_PUBLIC_STRIPE_PAYMENT_PAGE_URL,
   },
 });

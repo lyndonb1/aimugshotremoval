@@ -5,11 +5,14 @@ import TestimonialHighlight from "@/components/landing/testimonials/testimonial-
 import { Suspense } from "react";
 import { TestimonialsAlt } from "@/components/landing/testimonials/testimonials-alt";
 import { useLocale } from "next-intl";
+import Pricing from "@/components/pricing-plans";
+import FAQ from "@/components/landing/faq";
 
 const LandingPage = () => {
   // const user = await getCurrentUser()
   // if (user) redirect("/dashboard")
   const locale = useLocale();
+
   return (
     <div className="h-full ">
       <LandingNavbar />
@@ -18,13 +21,9 @@ const LandingPage = () => {
       <Suspense>
         <Testimonials locale={locale} />
       </Suspense>
-
       <TestimonialsAlt />
-      {/* 
-      <TrustedBy />
       <Pricing />
       <FAQ />
-      <Features /> */}
     </div>
   );
 };

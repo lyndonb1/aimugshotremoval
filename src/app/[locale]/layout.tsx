@@ -11,6 +11,7 @@ import { loadFullApplications } from "@/lib/applications";
 import { notFound } from "next/navigation";
 import { locales } from "../../../locales/locales";
 import { getMessages, getTranslator } from "next-intl/server";
+import { enUS, esES } from "@clerk/localizations";
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -58,13 +59,18 @@ export default async function RootLayout({
 }: RootLayoutProps) {
   const messages = await getMessages(locale);
   const isValidLocale = locales.some((cur) => cur === locale);
+  const localizationMap: { [key: string]: any } = {
+    en: enUS,
+    es: esES,
+  };
+  const selectedLocalization = localizationMap[locale] || enUS;
   if (!isValidLocale) notFound();
 
   const applications = await loadFullApplications();
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <ClerkProvider>
+      <ClerkProvider localization={selectedLocalization}>
         <body
           className={cn(font.className, "scroll-smooth font-sans antialiased")}
         >

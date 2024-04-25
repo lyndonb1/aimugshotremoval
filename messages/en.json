@@ -2,7 +2,8 @@
   "landingNavbar": {
     "dashboard": "Dashboard",
     "getStarted": "Get Started",
-    "applicationName": "aimugshotremoval.com"
+    "applicationName": "AiMugshotRemoval.com",
+    "buyNow": "Buy Now"
   },
   "metadata": {
     "applicationName": "AiMugshotRemoval.com",
@@ -22,16 +23,17 @@
   "hero": {
     "heading": "Clear Your Mugshot with AI",
     "feature-1": "Quick mugshot removal",
-    "feature-2": "AI-driven content suppression technology",
+    "feature-2": "AI-driven negative content suppression technology",
     "feature-3": "Clean your mugshot from Google, Bing, and Yahoo!",
     "feature-4": "Privacy and digital identity restoration",
     "heroUpperButtonText": "Start Cleaning Your Online Presence Today",
-    "heroButtonText": "Get Started Now",
+    "heroButtonText": "Buy Now",
     "heroLowerButtonText": "Protect Your Privacy With Us"
   },
   "testimonialHighlight": {
+    "applicationName": "AiMugshotRemoval.com",
     "question": "What are people saying?",
-    "quote": "aimugshotremoval.com is crucial for quickly erasing unwanted online records and restoring privacy."
+    "quote": "is crucial for quickly erasing unwanted online records and restoring privacy."
   },
   "testimonials": {
     "lovedBy": "Loved by",
@@ -39,6 +41,7 @@
     "usersSay": "Here's what our users have to say"
   },
   "testimonialNames": {
+    "testimonialTitle": "Testimonials",
     "title-1": "Cook",
     "description-1": "You helped me get my mugshot removed from the internet. I am so grateful for your service.",
     "title-2": "Driver",
@@ -60,6 +63,30 @@
     "labelName-3": "Community",
     "labelName-4": "Legal",
     "labelName-4-ItemName-1": "Terms",
-    "labelName-4-ItemName-2": "Privacy"
+    "labelName-4-ItemName-2": "Privacy",
+    "reservedRights": ". All Rights Reserved."
+  },
+  "pricing": {
+    "lovedBy": "Loved by",
+    "numberOfUsers": "500+ users",
+    "usersSay": "Here's what our users have to say"
+  },
+  "pricingPlans": {
+    "name": "AiMugshotRemoval",
+    "cta": "One time payment",
+    "desc": "AiMugshotRemoval Pro",
+    "feature-1": "Mugshot removal requested per state law where applicable",
+    "feature-2": "Mugshot removal through ai suppresion",
+    "feature-3": "Mugshot removal through google, bing, yahoo request",
+    "feature-4": "Ai reputation management",
+    "title": "Simple pricing.",
+    "subtitle": "One time payment only."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "accordionTrigger-1": "How does AiMugshotRemoval.com work?",
+    "accordionContent-1": "AiMugshotRemoval.com uses advanced AI-driven technology to remove mugshots, criminal arrest records, and booking information from online searches swiftly and efficiently.",
+    "accordionTrigger-2": "How long does it take to remove a mugshot?",
+    "accordionContent-2": "The time it takes to remove a mugshot varies depending on the complexity of the case. However, AiMugshotRemoval.com is designed to remove mugshots quickly and efficiently."
   }
 }

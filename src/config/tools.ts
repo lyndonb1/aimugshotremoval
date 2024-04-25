@@ -1,4 +1,4 @@
-import { Tool } from "@/types/tool"
+import { Tool } from "@/types/tool";
 
 // Add you own applications here
 export const applications = [
@@ -8,7 +8,7 @@ export const applications = [
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
   },
-]
+];
 
 // Comment or uncomment the tools you want to use
 export const tools: Tool[] = [
@@ -47,4 +47,4 @@ export const tools: Tool[] = [
   //   bgColor: "bg-green-700/10",
   //   href: "/dashboard/code",
   // },
-]
+];

@@ -22,6 +22,11 @@ export default authMiddleware({
     `/sign-up`,
     `/:locale/sign-in`,
     `/:locale/sign-up`,
+    `/pricing`,
+    `/:locale/terms`,
+    `/terms`,
+    `/:locale/privacy`,
+    `/privacy`,
   ],
   afterAuth: (auth, req, evt) => {
     // handle users who aren't authenticated

@@ -1,4 +1,3 @@
-import { siteConfig } from "@/config/site";
 import { useTranslations } from "next-intl";
 
 const TestimonialHighlight = () => {
@@ -15,7 +14,7 @@ const TestimonialHighlight = () => {
                 className="text-accent-foreground text-xl text-center font-semibold sm:text-2xl italic group-hover:-translate-y-1 transition-all duration-300 ease-in-out
                 "
               >
-                {siteConfig.name} {t("quote")}
+                {t("applicationName")} {t("quote")}
               </p>
             </blockquote>
           </figure>

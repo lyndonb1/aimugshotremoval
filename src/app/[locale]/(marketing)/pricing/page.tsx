@@ -1,5 +1,5 @@
-import FAQ from "@/components/landing/faq"
-import Pricing from "@/components/pricing-plans"
+import FAQ from "@/components/landing/faq";
+import Pricing from "@/components/pricing-plans";
 
 const PricingPage = () => {
   return (
@@ -7,7 +7,7 @@ const PricingPage = () => {
       <Pricing />
       <FAQ />
     </div>
-  )
-}
+  );
+};
 
-export default PricingPage
+export default PricingPage;

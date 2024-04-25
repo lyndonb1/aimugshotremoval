@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "../theme-toggle";
 import { LanguageSwitcher } from "../language-switcher";
-import { defaultLocale } from "../../../locales/locales";
 import { useLocale } from "next-intl";
 import { useTranslations } from "next-intl";
+import { env } from "@/env";
 
 const font = Montserrat({ weight: "600", subsets: ["latin"] });
 
@@ -32,15 +32,21 @@ export const LandingNavbar = () => {
       <div className="flex items-center gap-x-2">
         <LanguageSwitcher />
         <ThemeToggle />
-        <Link
+        <Link href={env.NEXT_PUBLIC_STRIPE_PAYMENT_PAGE_URL || ""}>
+          <Button variant="default" className="rounded-full">
+            {t("buyNow")}
+          </Button>
+        </Link>
+        {/* <Link
           href={`${locale !== defaultLocale ? locale : ""}${
             isSignedIn ? "/dashboard" : "/sign-up"
           }`}
+
         >
           <Button variant="default" className="rounded-full">
             {isSignedIn ? t("dashboard") : t("getStarted")}
           </Button>
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );

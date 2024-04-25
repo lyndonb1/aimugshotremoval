@@ -1,6 +1,6 @@
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { Badge } from "@/components/ui/badge"
-import { CodeBlock } from "@atlaskit/code"
+// import { CodeBlock } from "@atlaskit/code"
 import { TypographyP } from "@/components/ui/typography"
 
 export type ExampleOutputDialogProps = {
@@ -20,11 +20,11 @@ export const ExampleOutputDialog = ({
           <div className="absolute right-3 top-3 flex items-center justify-end">
             <Badge variant={"outline"}>{item?.output?.length} items</Badge>
           </div>
-          <CodeBlock
+          {/* <CodeBlock
             language="json"
             showLineNumbers={false}
             text={JSON.stringify(item?.output, null, 2)}
-          />
+          /> */}
         </div>
       </DialogContent>
     </Dialog>

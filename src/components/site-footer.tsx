@@ -34,40 +34,7 @@ export function SiteFooter() {
         },
       ],
     },
-    {
-      label: t("labelName-2"),
-      items: [
-        {
-          href: "#",
-          name: t("labelName-2-ItemName-1"),
-        },
-        {
-          href: `${siteConfig.links.github}/issues`,
-          name: t("labelName-2-ItemName-2"),
-        },
-        {
-          href: `${siteConfig.links.github}/commits/main`,
-          name: t("labelName-2-ItemName-3"),
-        },
-      ],
-    },
-    {
-      label: t("labelName-3"),
-      items: [
-        {
-          href: siteConfig.links.discord,
-          name: "Discord",
-        },
-        {
-          href: siteConfig.links.twitter,
-          name: "Twitter",
-        },
-        {
-          href: `mailto:${siteConfig.email}`,
-          name: "Email",
-        },
-      ],
-    },
+
     {
       label: t("labelName-4"),
       items: [
@@ -92,7 +59,7 @@ export function SiteFooter() {
           <div className="mb-12 flex-col flex gap-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="relative h-8 w-8"></div>
-              <span className="move-left text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 {t("applicationName")}
               </span>
             </Link>
@@ -123,7 +90,7 @@ export function SiteFooter() {
 
         <div className="flex flex-col sm:flex-row sm:flex sm:items-center sm:justify-between border-t py-4 gap-2">
           <div className="flex space-x-5 sm:justify-center sm:mt-0">
-            {footerSocials.map((social) => (
+            {/* {footerSocials.map((social) => (
               <Link
                 key={social.name}
                 href={social.href}
@@ -133,7 +100,7 @@ export function SiteFooter() {
                 {social.icon}
                 <span className="sr-only">{social.name}</span>
               </Link>
-            ))}
+            ))} */}
           </div>
           <span className="text-sm text-muted-foreground sm:text-center dark:text-gray-400">
             © {currentYear}
@@ -141,7 +108,7 @@ export function SiteFooter() {
             <Link href="/" className="cursor-pointer">
               {t("applicationName")}
             </Link>
-            . All Rights Reserved.
+            {t("reservedRights")}
           </span>
         </div>
       </div>
