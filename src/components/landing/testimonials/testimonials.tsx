@@ -1,6 +1,6 @@
 import { RADIAN_BACKGROUND } from "@/config/constants";
 import { cn } from "@/lib/utils";
-import { getTranslator } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 // const tweetIds = [
 //   "1707007299917688929",
@@ -44,7 +44,7 @@ export default async function Testimonials({ locale }: { locale: string }) {
   // const firstRow = props?.tweets?.slice(0, props?.tweets?.length / 2);
   // const secondRow = props?.tweets?.slice(props?.tweets?.length / 2);
 
-  const t = await getTranslator(locale, "testimonials");
+  const t = await getTranslations("testimonials");
 
   return (
     <section id="testimonials" className="relative">

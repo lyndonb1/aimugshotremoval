@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import { loadFullApplications } from "@/lib/applications";
 import { notFound } from "next/navigation";
 import { locales } from "../../../locales/locales";
-import { getMessages, getTranslator } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { enUS, esES } from "@clerk/localizations";
 
 const font = Inter({ subsets: ["latin"] });
@@ -27,7 +27,7 @@ export async function generateMetadata({
 }: Readonly<{
   params: { locale: string };
 }>) {
-  const t = await getTranslator(locale, "metadata");
+  const t = await getTranslations("metadata");
 
   return {
     metadataBase: new URL("https://shipindays.cc"),
@@ -57,7 +57,7 @@ export default async function RootLayout({
   children,
   params: { locale },
 }: RootLayoutProps) {
-  const messages = await getMessages(locale);
+  const messages = await getMessages({ locale });
   const isValidLocale = locales.some((cur) => cur === locale);
   const localizationMap: { [key: string]: any } = {
     en: enUS,
