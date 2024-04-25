@@ -4,10 +4,10 @@ import { useLocale } from "next-intl";
 
 export default function Page() {
   const locale = useLocale();
+  const path =
+    locale !== defaultLocale && locale !== "en"
+      ? `/${locale}/sign-in`
+      : "/sign-in";
 
-  return (
-    <SignIn
-      redirectUrl={`${locale !== defaultLocale ? locale : ""}/dashboard`}
-    />
-  );
+  return <SignIn path={path} />;
 }
