@@ -34,10 +34,9 @@ export function LanguageSwitcher() {
         {filteredLocales?.map((currentLocale, index) => (
           <Fragment key={index}>
             <Link
-              href="/"
+              href={`/${currentLocale}`}
               // TODO error on sub layout language switch (example from dashboard)
               // href={pathname?.replace(`/${locale}`, "") ?? "/"}
-              locale={currentLocale}
             >
               <DropdownMenuItem className="flex cursor-pointer items-start justify-center">
                 {renderFlag(currentLocale)}

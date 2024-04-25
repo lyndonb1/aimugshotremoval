@@ -1,4 +1,4 @@
-import { authMiddleware } from "@clerk/nextjs";
+import { authMiddleware, redirectToSignIn } from "@clerk/nextjs";
 import createMiddleware from "next-intl/middleware";
 import { defaultLocale, locales } from "../locales/locales";
 
@@ -30,6 +30,14 @@ export default authMiddleware({
     "/en",
     "/es",
   ],
+  afterAuth: (auth, req, evt) => {
+    // handle users who aren't authenticated
+    if (!auth.userId && !auth.isPublicRoute) {
+      return redirectToSignIn({ returnBackUrl: req.url });
+    }
+
+    return intlMiddleware(req);
+  },
 });
 
 export const config = {

@@ -1,91 +1,92 @@
 {
   "landingNavbar": {
-    "dashboard": "Tablero",
+    "dashboard": "Panel de Control",
     "getStarted": "Empezar",
-    "applicationName": "AiMugshotRemoval.com"
+    "applicationName": "AiMugshotRemoval.com",
+    "buyNow": "Comprar Ahora"
   },
   "metadata": {
     "applicationName": "AiMugshotRemoval.com",
-    "applicationDescription": "Elimine rápidamente las fotos de fichas policiales, los registros de arrestos criminales y la información de reservas de las búsquedas en línea de forma rápida y eficiente con nuestra tecnología avanzada impulsada por IA.",
-    "keywords-0": "eliminación de fotos de fichas policiales",
+    "applicationDescription": "Elimina rápidamente y de manera eficiente las fichas policiales, los antecedentes penales y la información de detención de las búsquedas en línea con nuestra tecnología avanzada impulsada por IA.",
+    "keywords-0": "eliminación de ficha policial",
     "keywords-1": "eliminación de antecedentes penales",
     "keywords-2": "protección de privacidad en línea",
     "keywords-3": "restauración de identidad digital",
-    "keywords-4": "eliminación de registros de arresto",
+    "keywords-4": "eliminación de antecedentes de arresto",
     "keywords-5": "servicios de privacidad",
     "keywords-6": "supresión de contenido en línea",
     "keywords-7": "eliminación de cargos criminales",
-    "keywords-8": "servicios de eliminación potenciados por IA",
-    "keywords-9": "eliminar fotos de reserva",
-    "keywords-10": "borrar fotos de fichas policiales en línea"
+    "keywords-8": "servicios de eliminación impulsados por IA",
+    "keywords-9": "eliminar fotos de detención",
+    "keywords-10": "borrar fichas policiales en línea"
   },
   "hero": {
-    "heading": "Elimine Su Foto de Ficha Policial con IA",
-    "feature-1": "Eliminación rápida de fotos de fichas policiales",
-    "feature-2": "Tecnología de supresión de contenido impulsada por IA",
-    "feature-3": "Limpie su foto de ficha policial de Google, Bing y Yahoo!",
-    "feature-4": "Privacidad y restauración de identidad digital",
-    "heroUpperButtonText": "Comience a Limpiar su Presencia en Línea Hoy",
-    "heroButtonText": "Empezar Ahora",
-    "heroLowerButtonText": "Proteja su Privacidad Con Nosotros"
+    "heading": "Limpia tu ficha policial con IA",
+    "feature-1": "Eliminación rápida de fichas policiales",
+    "feature-2": "Tecnología de supresión de contenido negativo impulsada por IA",
+    "feature-3": "Limpia tu ficha policial de Google, Bing y Yahoo!",
+    "feature-4": "Restauración de privacidad e identidad digital",
+    "heroUpperButtonText": "Empieza a Limpiar Tu Presencia en Línea Hoy",
+    "heroButtonText": "Comprar Ahora",
+    "heroLowerButtonText": "Protege Tu Privacidad Con Nosotros"
   },
   "testimonialHighlight": {
     "applicationName": "AiMugshotRemoval.com",
-    "question": "¿Qué están diciendo las personas?",
-    "quote": "es crucial para eliminar rápidamente registros no deseados en línea y restaurar la privacidad."
+    "question": "¿Qué dice la gente?",
+    "quote": "es crucial para borrar rápidamente registros no deseados en línea y restaurar la privacidad."
   },
   "testimonials": {
-    "lovedBy": "Amado por",
-    "numberOfUsers": "500+ usuarios",
+    "lovedBy": "Querido por",
+    "numberOfUsers": "más de 500 usuarios",
     "usersSay": "Esto es lo que dicen nuestros usuarios"
   },
   "testimonialNames": {
     "testimonialTitle": "Testimonios",
     "title-1": "Cocinero",
-    "description-1": "Me ayudaste a eliminar mi foto de ficha policial de Internet. Estoy muy agradecido por tu servicio.",
+    "description-1": "Me ayudaste a eliminar mi ficha policial de internet. Estoy muy agradecido por su servicio.",
     "title-2": "Conductor",
-    "description-2": "Mi foto de ficha policial me estaba costando oportunidades de trabajo. Gracias a ustedes, ahora puedo seguir adelante con mi vida.",
+    "description-2": "Mi ficha policial me estaba costando oportunidades de trabajo. Gracias a ustedes, ahora puedo seguir adelante con mi vida.",
     "title-3": "Mecánico",
-    "description-3": "Estaba tan avergonzado por mi foto de ficha policial. Gracias a ustedes, ahora puedo levantar la cabeza con orgullo.",
+    "description-3": "Me avergonzaba mucho mi ficha policial. Gracias a ustedes, ahora puedo levantar la cabeza con orgullo.",
     "title-4": "Carpintero",
-    "description-4": "Gracias por su ayuda para eliminar mi foto de ficha policial de Internet. Ahora puedo respirar tranquilo."
+    "description-4": "Gracias por ayudarme a eliminar mi ficha policial de internet. Ahora puedo respirar tranquilo."
   },
   "footerNavLabels": {
     "applicationName": "AiMugshotRemoval.com",
-    "applicationDescription": "Elimine rápidamente las fotos de fichas policiales, los registros de arrestos criminales y la información de reservas de las búsquedas en línea de forma rápida y eficiente con nuestra tecnología avanzada impulsada por IA.",
+    "applicationDescription": "Elimina rápidamente y de manera eficiente las fichas policiales, los antecedentes penales y la información de detención de las búsquedas en línea con nuestra tecnología avanzada impulsada por IA.",
     "labelName-1": "Producto",
     "labelName-1-ItemName-1": "Precios",
     "labelName-2": "Desarrolladores",
     "labelName-2-ItemName-1": "Documentación",
     "labelName-2-ItemName-2": "Comentarios y Solicitudes",
-    "labelName-2-ItemName-3": "Registro de cambios",
+    "labelName-2-ItemName-3": "Registro de Cambios",
     "labelName-3": "Comunidad",
     "labelName-4": "Legal",
     "labelName-4-ItemName-1": "Términos",
     "labelName-4-ItemName-2": "Privacidad",
-    "reservedRights": ". Todos los derechos reservados."
+    "reservedRights": ". Todos los Derechos Reservados."
   },
   "pricing": {
-    "lovedBy": "Amado por",
-    "numberOfUsers": "500+ usuarios",
+    "lovedBy": "Querido por",
+    "numberOfUsers": "más de 500 usuarios",
     "usersSay": "Esto es lo que dicen nuestros usuarios"
   },
   "pricingPlans": {
     "name": "AiMugshotRemoval",
     "cta": "Pago único",
     "desc": "AiMugshotRemoval Pro",
-    "feature-1": "Eliminación de fotos de fichas policiales solicitada según la ley estatal donde sea aplicable",
-    "feature-2": "Eliminación de fotos de fichas policiales mediante supresión de IA",
-    "feature-3": "Eliminación de fotos de fichas policiales mediante solicitud a Google, Bing, Yahoo",
+    "feature-1": "Eliminación de fichas policiales solicitada según la ley estatal aplicable",
+    "feature-2": "Eliminación de fichas policiales mediante supresión de IA",
+    "feature-3": "Eliminación de fichas policiales mediante solicitud a Google, Bing, Yahoo",
     "feature-4": "Gestión de reputación de IA",
     "title": "Precios simples.",
-    "subtitle": "Pago único solamente."
+    "subtitle": "Solo pago único."
   },
   "faq": {
     "title": "Preguntas Frecuentes",
     "accordionTrigger-1": "¿Cómo funciona AiMugshotRemoval.com?",
-    "accordionContent-1": "AiMugshotRemoval.com utiliza tecnología avanzada impulsada por IA para eliminar rápidamente las fotos de fichas policiales, los registros de arrestos criminales y la información de reservas de las búsquedas en línea de forma rápida y eficiente.",
-    "accordionTrigger-2": "¿Cuánto tiempo se tarda en eliminar una foto de ficha policial?",
-    "accordionContent-2": "El tiempo que se tarda en eliminar una foto de ficha policial varía según la complejidad del caso. Sin embargo, AiMugshotRemoval.com está diseñado para eliminar rápidamente las fotos de fichas policiales de manera rápida y eficiente."
+    "accordionContent-1": "AiMugshotRemoval.com utiliza tecnología avanzada impulsada por IA para eliminar fichas policiales, antecedentes penales y información de detención de las búsquedas en línea rápidamente y de manera eficiente.",
+    "accordionTrigger-2": "¿Cuánto tiempo se tarda en eliminar una ficha policial?",
+    "accordionContent-2": "El tiempo necesario para eliminar una ficha policial varía según la complejidad del caso. Sin embargo, AiMugshotRemoval.com está diseñado para eliminar fichas policiales de manera rápida y eficiente."
   }
 }
