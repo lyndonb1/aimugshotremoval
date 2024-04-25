@@ -1,7 +1,7 @@
 import { Icons } from "@/components/icons";
 import { siteConfig } from "@/config/site";
 import { DiscordLogoIcon } from "@radix-ui/react-icons";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 const footerSocials = [

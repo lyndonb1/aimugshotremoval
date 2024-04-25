@@ -1,29 +1,29 @@
-import { Heading } from "@/components/heading"
-import { Icons } from "@/components/icons"
-import { ApplicationSubNav } from "@/components/application-sub-nav"
-import { applicationNavItems } from "../../constants"
-import { loadFullApplication } from "@/lib/applications"
-import { notFound } from "next/navigation"
-import { EmptyPlaceholder } from "@/components/empty-placeholder"
-import { buttonVariants } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
-import Link from "next-intl/link"
+import { Heading } from "@/components/heading";
+import { Icons } from "@/components/icons";
+import { ApplicationSubNav } from "@/components/application-sub-nav";
+import { applicationNavItems } from "../../constants";
+import { loadFullApplication } from "@/lib/applications";
+import { notFound } from "next/navigation";
+import { EmptyPlaceholder } from "@/components/empty-placeholder";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface ApplicationHistoryPageProps {
-  params: { applicationId: string }
+  params: { applicationId: string };
 }
 
 const ApplicationHistoryPage = async ({
   params,
 }: ApplicationHistoryPageProps) => {
-  const application = await loadFullApplication(params.applicationId)
+  const application = await loadFullApplication(params.applicationId);
 
   if (!application) {
-    notFound()
+    notFound();
   }
 
   // const iframeSrc = `${GENERATED_BY_ENDPOINT}/iframe/applications/${application.slug}/history`
-  const Icon = Icons[application.icon as keyof typeof Icons]
+  const Icon = Icons[application.icon as keyof typeof Icons];
 
   return (
     <div className="h-full">
@@ -63,7 +63,7 @@ const ApplicationHistoryPage = async ({
         </EmptyPlaceholder>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ApplicationHistoryPage
+export default ApplicationHistoryPage;

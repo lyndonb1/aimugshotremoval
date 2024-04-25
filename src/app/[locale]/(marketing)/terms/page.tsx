@@ -1,5 +1,5 @@
 import { siteConfig } from "@/config/site";
-import Link from "next-intl/link";
+import Link from "next/link";
 
 const Terms = () => {
   return (

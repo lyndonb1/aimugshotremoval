@@ -1,18 +1,18 @@
-"use client"
-import Link from "next-intl/link"
-import Image from "next/image"
-import { Montserrat } from "next/font/google"
-import { usePathname } from "next/navigation"
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { Montserrat } from "next/font/google";
+import { usePathname } from "next/navigation";
 
-import { cn, transformApplications } from "@/lib/utils"
-import { FreeCounter } from "@/components/free-counter"
-import { siteConfig } from "@/config/site"
-import { tools } from "@/config/tools"
-import { Icons } from "./icons"
-import { useState, useEffect } from "react"
-import { Tool } from "@/types/tool"
+import { cn, transformApplications } from "@/lib/utils";
+import { FreeCounter } from "@/components/free-counter";
+import { siteConfig } from "@/config/site";
+import { tools } from "@/config/tools";
+import { Icons } from "./icons";
+import { useState, useEffect } from "react";
+import { Tool } from "@/types/tool";
 
-const poppins = Montserrat({ weight: "600", subsets: ["latin"] })
+const poppins = Montserrat({ weight: "600", subsets: ["latin"] });
 
 const defaultRoutes: Tool[] = [
   {
@@ -26,37 +26,37 @@ const defaultRoutes: Tool[] = [
     icon: "settings",
     href: "/dashboard/settings",
   },
-]
+];
 
 export const Sidebar = ({
   applications,
   apiLimitCount = 0,
   isPro = false,
 }: {
-  applications: any
-  apiLimitCount: number
-  isPro: boolean
+  applications: any;
+  apiLimitCount: number;
+  isPro: boolean;
 }) => {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
-  const [routes, setRoutes] = useState(defaultRoutes)
+  const [routes, setRoutes] = useState(defaultRoutes);
 
   useEffect(() => {
     const mergeAllFeatures = async () => {
-      const appRoutes = transformApplications(applications)
+      const appRoutes = transformApplications(applications);
       // Taking all default routes except the last one
-      const prevRoutesWithoutSettings = routes.slice(0, routes.length - 1)
+      const prevRoutesWithoutSettings = routes.slice(0, routes.length - 1);
       setRoutes([
         ...prevRoutesWithoutSettings,
         ...appRoutes,
         ...tools,
         // adding last default route at the end
         routes[routes.length - 1],
-      ])
-    }
+      ]);
+    };
 
-    mergeAllFeatures()
-  }, [])
+    mergeAllFeatures();
+  }, []);
 
   return (
     <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white">
@@ -71,7 +71,7 @@ export const Sidebar = ({
         </Link>
         <div className="space-y-1">
           {routes.map((route) => {
-            const Icon = Icons[route.icon as keyof typeof Icons]
+            const Icon = Icons[route.icon as keyof typeof Icons];
             return (
               <Link
                 key={route.href}
@@ -88,11 +88,11 @@ export const Sidebar = ({
                   {route.label}
                 </div>
               </Link>
-            )
+            );
           })}
         </div>
       </div>
       <FreeCounter apiLimitCount={apiLimitCount} isPro={isPro} />
     </div>
-  )
-}
+  );
+};

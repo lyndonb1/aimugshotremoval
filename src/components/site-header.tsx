@@ -8,7 +8,7 @@
 // import { cn } from "@/lib/utils";
 // import { StarIcon } from "@heroicons/react/24/solid";
 // import { User } from "next-auth";
-// import Link from "next-intl/link";
+// import Link from "next/link";
 
 // interface SiteHeaderProps {
 //   user?: User;

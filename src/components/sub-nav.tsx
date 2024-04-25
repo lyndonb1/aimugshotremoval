@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import Link from "next-intl/link"
-import { usePathname } from "next/navigation"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
-import { cn } from "@/lib/utils"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { cn } from "@/lib/utils";
 
 type NavItem = {
-  title: string
-  href: string
-}
+  title: string;
+  href: string;
+};
 
 type SubNavProps = React.HTMLAttributes<HTMLDivElement> & {
-  nav: NavItem[]
-}
+  nav: NavItem[];
+};
 export function SubNav({ className, nav, ...props }: SubNavProps) {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <div className="flex items-center px-6 pb-4">
@@ -39,5 +39,5 @@ export function SubNav({ className, nav, ...props }: SubNavProps) {
         <ScrollBar className="invisible" orientation="horizontal" />
       </ScrollArea>
     </div>
-  )
+  );
 }

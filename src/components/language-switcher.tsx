@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 import { renderFlag } from "./render-flag";
 import { locales } from "../../locales/locales";
 import { useLocale } from "next-intl";
-import Link from "next-intl/link";
+import Link from "next/link";
 
 export function LanguageSwitcher() {
   const locale = useLocale();
