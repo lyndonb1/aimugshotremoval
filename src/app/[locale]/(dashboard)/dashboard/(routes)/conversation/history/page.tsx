@@ -1,15 +1,15 @@
-"use client"
-import { MessageSquare } from "lucide-react"
+"use client";
+import { MessageSquare } from "lucide-react";
 
-import { Heading } from "@/components/heading"
-import { buttonVariants } from "@/components/ui/button"
+import { Heading } from "@/components/heading";
+import { buttonVariants } from "@/components/ui/button";
 
-import { SubNav } from "@/components/sub-nav"
-import { EmptyPlaceholder } from "@/components/empty-placeholder"
-import Link from "next-intl/link"
-import { Icons } from "@/components/icons"
-import { cn } from "@/lib/utils"
-import { conversationNavItems } from "../constants"
+import { SubNav } from "@/components/sub-nav";
+import { EmptyPlaceholder } from "@/components/empty-placeholder";
+import Link from "next/link";
+import { Icons } from "@/components/icons";
+import { cn } from "@/lib/utils";
+import { conversationNavItems } from "../constants";
 
 const ConversationHistoryPage = () => {
   return (
@@ -45,7 +45,7 @@ const ConversationHistoryPage = () => {
         </EmptyPlaceholder>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ConversationHistoryPage
+export default ConversationHistoryPage;
