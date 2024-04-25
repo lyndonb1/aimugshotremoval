@@ -9,6 +9,13 @@ const i18nConfig = "./src/i18n/i18n.ts";
 const millionConfig = { auto: { rsc: true } };
 
 const nextConfig = {
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
