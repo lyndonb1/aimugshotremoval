@@ -1,15 +1,15 @@
-"use client"
-import { ImageIcon } from "lucide-react"
+"use client";
+import { ImageIcon } from "lucide-react";
 
-import { Heading } from "@/components/heading"
-import { buttonVariants } from "@/components/ui/button"
+import { Heading } from "@/components/heading";
+import { buttonVariants } from "@/components/ui/button";
 
-import { SubNav } from "@/components/sub-nav"
-import { EmptyPlaceholder } from "@/components/empty-placeholder"
-import Link from "next-intl/link"
-import { Icons } from "@/components/icons"
-import { cn } from "@/lib/utils"
-import { imageNavItems } from "../constants"
+import { SubNav } from "@/components/sub-nav";
+import { EmptyPlaceholder } from "@/components/empty-placeholder";
+import Link from "next/link";
+import { Icons } from "@/components/icons";
+import { cn } from "@/lib/utils";
+import { imageNavItems } from "../constants";
 
 const ImageHistoryPage = () => {
   return (
@@ -42,7 +42,7 @@ const ImageHistoryPage = () => {
         </EmptyPlaceholder>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ImageHistoryPage
+export default ImageHistoryPage;

@@ -10,7 +10,7 @@ import {
 } from "@/config/constants";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { useLocale } from "next-intl";
 import { env } from "@/env";
 
