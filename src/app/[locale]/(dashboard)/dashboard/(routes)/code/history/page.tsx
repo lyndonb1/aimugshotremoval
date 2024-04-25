@@ -1,14 +1,14 @@
-"use client"
-import { Heading } from "@/components/heading"
-import { buttonVariants } from "@/components/ui/button"
+"use client";
+import { Heading } from "@/components/heading";
+import { buttonVariants } from "@/components/ui/button";
 
-import { SubNav } from "@/components/sub-nav"
-import { EmptyPlaceholder } from "@/components/empty-placeholder"
-import Link from "next-intl/link"
-import { Icons } from "@/components/icons"
-import { cn } from "@/lib/utils"
-import { codeNavItems } from "../constants"
-import { Code } from "lucide-react"
+import { SubNav } from "@/components/sub-nav";
+import { EmptyPlaceholder } from "@/components/empty-placeholder";
+import Link from "next/link";
+import { Icons } from "@/components/icons";
+import { cn } from "@/lib/utils";
+import { codeNavItems } from "../constants";
+import { Code } from "lucide-react";
 
 const CodeHistoryPage = () => {
   return (
@@ -41,7 +41,7 @@ const CodeHistoryPage = () => {
         </EmptyPlaceholder>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CodeHistoryPage
+export default CodeHistoryPage;
