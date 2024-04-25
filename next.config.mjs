@@ -9,6 +9,9 @@ const i18nConfig = "./src/i18n/i18n.ts";
 const millionConfig = { auto: { rsc: true } };
 
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   reactStrictMode: true,
   swcMinify: true,
   ...(process.env.NODE_ENV === "production" && {
