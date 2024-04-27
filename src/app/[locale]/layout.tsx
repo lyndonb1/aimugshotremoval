@@ -12,6 +12,7 @@ import { notFound } from "next/navigation";
 import { locales } from "../../../locales/locales";
 import { getMessages, getTranslations } from "next-intl/server";
 import { enUS, esES } from "@clerk/localizations";
+import { Analytics } from "@vercel/analytics/react";
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,7 @@ export async function generateMetadata({
   const t = await getTranslations("metadata");
 
   return {
-    metadataBase: new URL("https://shipindays.cc"),
+    metadataBase: new URL("https://aimugshotremoval.com/"),
     title: t("applicationName"),
     description: t("applicationDescription"),
     keywords: [
@@ -78,6 +79,7 @@ export default async function RootLayout({
             <MotionProvider>
               <NextIntlClientProvider locale={locale} messages={messages}>
                 <ModalProvider applications={applications} />
+                <Analytics />
                 {children}
                 <Toaster />
               </NextIntlClientProvider>
